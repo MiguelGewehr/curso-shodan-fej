@@ -1,0 +1,24 @@
+.admin-presence {
+  padding: 20px;
+  color: #e6e6e6;
+  background: #000;
+  min-height: 100vh;
+}
+.presence-grid { background:#0f0f10; padding:12px; border-radius:8px }
+.grid-header, .grid-row { display:flex; align-items:center; gap:12px; padding:6px 0 }
+.student-col { width:220px; font-weight:600; color:#fff }
+.months-col { display:flex; gap:6px }
+.module-label { width:36px; text-align:center; font-size:11px; color:#bdbdbd; white-space:nowrap }
+.att-box { width:30px; height:22px; border-radius:4px; border:1px solid #222; cursor:pointer }
+.att-box.present { background:#2ecc71; border-color:#2ecc71 }
+.att-box.absent { background:#e74c3c; border-color:#e74c3c }
+.att-box.unknown { background:#7f8c8d; border-color:#7f8c8d }
+
+.modal-overlay { position:fixed; inset:0; background:rgba(0,0,0,0.7); display:flex; align-items:center; justify-content:center; z-index:1000 }
+.modal { width:520px; max-width:94%; background:#0b0b0b; border:1px solid #222; padding:18px; border-radius:10px }
+.modal-actions { display:flex; gap:8px; justify-content:flex-end; margin-top:12px }
+.modal-actions button { padding:8px 12px; border-radius:6px; border:none; cursor:pointer }
+.modal-actions .present { background:#2ecc71; color:#042 }
+.modal-actions .absent { background:#e74c3c; color:#210 }
+.modal-actions .unknown { background:#888; color:#fff }
+.modal-actions .close { background:#444; color:#fff }

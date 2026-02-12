@@ -1,0 +1,209 @@
+.payment-section {
+  background: #181a1b;
+  border-radius: 8px;
+  padding: 24px 40px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.payment-title {
+  font-size: 1.3rem;
+  margin-bottom: 0;
+  margin: 0;
+  color: #fff;
+}
+.payment-actions {
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+.modules-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding: 0 40px;
+}
+
+.modules-header .section-title {
+  margin: 0;
+}
+
+.alerts-section {
+  background: #181a1b;
+  border-radius: 8px;
+  padding: 20px 40px;
+  margin-top: 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.section-title {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #fff;
+}
+.alerts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.alert-item {
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #fff;
+  background: #232323;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.alert-item.overdue {
+  background: #e74c3c;
+  color: #fff;
+}
+.alert-item.invalid {
+  background: #f1c40f;
+  color: #222;
+}
+/* Container principal da página */
+.page-container {
+  background-color: #121212; /* Fundo escuro */
+  min-height: 100vh;
+  padding: 40px;
+  font-family: sans-serif;
+  color: white;
+}
+
+.page-title {
+  display: none;
+}
+
+/* Grid que organiza os módulos */
+.modules-grid {
+  display: grid;
+  /* Cria colunas responsivas: elas terão no mínimo 280px e no máximo 1 fração do espaço. 
+     Isso garante que caibam na tela e se ajustem. */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px; /* Espaçamento entre os cards */
+}
+
+/* Card individual de cada módulo */
+.module-card {
+  position: relative;
+  height: 450px;
+  border-radius: 12px;
+  overflow: hidden; /* Garante que a imagem não saia das bordas arredondadas */
+  
+  /* Configuração da imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  
+  /* Efeito de transição e cursor */
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+
+  /* Flexbox para alinhar o conteúdo na parte de baixo */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+/* Efeito de zoom ao passar o mouse */
+.module-card:hover {
+  transform: scale(1.04);
+}
+
+/* Gradiente escuro sobre a imagem para dar legibilidade ao texto */
+.module-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 25%, rgba(0, 0, 0, 0) 60%);
+  z-index: 1;
+}
+
+/* Conteúdo de texto do card */
+.module-content {
+  position: relative; /* Para ficar acima do gradiente */
+  z-index: 2;
+}
+
+/* Tag verde do módulo (ex: "Módulo 1") */
+.module-tag {
+  background-color: #2E7D32; /* Verde escuro */
+  padding: 5px 12px;
+  border-radius: 16px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+/* Título do módulo */
+.module-title {
+  font-size: 1.6rem;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Estiliza o container do Swiper para ter um pouco de preenchimento nas laterais */
+.mySwiper {
+  padding: 10px 0px; /* Remove padding extra dos lados */
+}
+
+/* Sessão de módulos com padding consistente */
+.modules-section {
+  padding: 0 40px;
+}
+
+/* Garante que os slides tenham a mesma altura */
+.swiper-slide {
+  height: auto;
+}
+
+/* Deixa as setas de navegação brancas para aparecerem no fundo escuro */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #ffffff;
+  font-size: 2rem !important; /* Deixa as setas um pouco maiores */
+}
+
+/* Deixa a bolinha de paginação ativa branca */
+.swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}
+
+/* Deixa as bolinhas inativas com uma opacidade */
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.module-link {
+  text-decoration: none; 
+}
+
+.payment-link {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.payment-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.payment-button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,40 @@
+.payment-upload {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.payment-upload h2 {
+  color: #333;
+  text-align: center;
+}
+
+.payment-upload p {
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.payment-upload input[type="file"] {
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.payment-upload button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.payment-upload button:hover {
+  background-color: #0056b3;
+}

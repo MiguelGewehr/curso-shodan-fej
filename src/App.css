@@ -6,13 +6,3 @@
   text-shadow: #000 1px 1px;
   color: #fff;
 }
-
-.App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: url("assets/bg.webp") no-repeat;
-  background-size: cover;
-  background-position: center;
-}

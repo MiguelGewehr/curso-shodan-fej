@@ -7,12 +7,33 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependências
 node_modules
+package-lock.json
+yarn.lock
+
+# Build
 dist
 dist-ssr
 *.local
+build/
+.next/
+*.tsbuildinfo
 
-# Editor directories and files
+# Variáveis de ambiente e informações sensíveis
+.env
+.env.local
+.env.*.local
+.env.production.local
+serviceAccountKey.json
+firebase-credentials.json
+functions/serviceAccountKey.json
+
+# Firebase
+.firebaserc
+.firebase/
+
+# IDE e Editor
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -22,3 +43,37 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Vite
+.vite/
+
+# Testes
+coverage/
+.nyc_output
+.mocha_output
+
+# Deployment
+.vercel
+.netlify
+
+# Arquivos temporários
+*.tmp
+*.temp
+.cache/
+tmp/
+
+# IDE settings locais
+.vscode/settings.json
+.idea/workspace.xml

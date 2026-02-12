@@ -1,0 +1,89 @@
+.student-payment {
+  background: #000;
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: #e6e6e6;
+  font-family: Arial, sans-serif;
+}
+
+.student-payment h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 32px;
+  color: #fff;
+}
+
+.payment-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #0f0f10;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.6);
+}
+
+.payment-form p {
+  margin-bottom: 16px;
+  color: #bdbdbd;
+  font-size: 0.95rem;
+}
+
+.file-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  background: #050505;
+  border: 1px solid #222;
+  border-radius: 6px;
+  color: #e6e6e6;
+  cursor: pointer;
+}
+
+.file-input:hover {
+  border-color: #444;
+}
+
+.file-info {
+  background: #181a1b;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+  color: #2ecc71;
+}
+
+.upload-button {
+  width: 100%;
+  padding: 12px 16px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.upload-button:hover {
+  background: #0056b3;
+}
+
+.message {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.message.success {
+  background: #2ecc71;
+  color: #042;
+}
+
+.message.error {
+  background: #e74c3c;
+  color: #fff;
+}

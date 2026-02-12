@@ -1,3 +1,13 @@
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("../../assets/bg.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .container {
   width: 450px;
   background: rgba(255, 255, 255, 0.15);
@@ -95,4 +105,14 @@
 
 .signup-link p a:hover {
   text-decoration: underline;
+}
+
+.container .error-message {
+    color: #ff9999; /* Uma cor de erro suave */
+    background-color: rgba(255, 0, 0, 0.15);
+    border: 1px solid rgba(255, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
 }
